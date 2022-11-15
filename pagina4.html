@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css/flex.css">
+    <link rel="stylesheet" href="style.css/model.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28ca8ba07e.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
 </head>
 
-<body class="img2-body">
+<body>
     <header class="titulares header">
         <img class="logo" src="imagens/LOGO.png">
         <button class="nav-toggle">
@@ -38,11 +40,22 @@
         </nav>
     </header>
     <main>
+        <div class="model">
+            <ul class="slider">
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+            </ul>
+        </div>
         <section class="flex-container flex-row-reverse">
             <article class="flex-item">
-                <h2>CARTAGENA</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum, ab sed officiis repellendus aut
-                    harum animi sunt quis, magni corrupti corporis est sequi quasi. Libero iure ipsa ea et.</p>
+                <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">CARTAGENA</h2>
+                <p data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine">Una de las ciudades mas icónicas en nuestra compañía, ya que por medio del turismo es una de 
+                    las mejores oficinas de nuestro país.</p>
             </article>
             <article class="flex-item">
                 <img src="imagens/cartagena.jpg">
@@ -50,9 +63,13 @@
         </section>
         <section class="flex-container">
             <article class="flex-item">
-                <h2>BOGOTA</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum, ab sed officiis repellendus aut
-                    harum animi sunt quis, magni corrupti corporis est sequi quasi. Libero iure ipsa ea et.</p>
+                <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">BOGOTA</h2>
+                <p  data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine">Bogotá nuestro fuete y la capital, se denomina nuestro fuerte por que contamos con oficinas en todos 
+                    los centros comerciales de la ciudad y hacemos presencia en puntos estratégicos de la capital.</p>
             </article>
             <article class="flex-item">
                 <img src="imagens/bogota.jpg">
@@ -60,9 +77,13 @@
         </section>
         <section class="flex-container flex-row-reverse">
             <article class="flex-item">
-                <h2>CALI</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum, ab sed officiis repellendus aut
-                    harum animi sunt quis, magni corrupti corporis est sequi quasi. Libero iure ipsa ea et.</p>
+                <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">CALI</h2>
+                <p  data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine">Acompañada de su arquitectura Cali cuenta con oficinas posicionadas gracias a las buenas tazas
+                    que se ofrecen en esta ciudad.</p>
             </article>
             <article class="flex-item">
                 <img src="imagens/cucuta.jpg">
@@ -70,9 +91,13 @@
         </section>
         <section class="flex-container">
             <article class="flex-item">
-                <h2>MEDELLIN</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum, ab sed officiis repellendus aut
-                    harum animi sunt quis, magni corrupti corporis est sequi quasi. Libero iure ipsa ea et.</p>
+                <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">MEDELLIN</h2>
+                <p  data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine">Medellín hace parte de las nuevas aperturas a nivel nacional, implementando un nuevo cambio de 
+                    divisas.</p>
             </article>
             <article class="flex-item">
                 <img src="imagens/medellin.jpg">
@@ -80,7 +105,7 @@
         </section>
     </main>
     <footer class="titulares">
-        <h1>Siguenos</h1>
+        <h3>Siguenos</h3>
         <div class="redes-container">
             <div>
                 <img class=itm src="imagens/LOGO.png" alt="logo">
@@ -98,7 +123,10 @@
         </div>
         <p>2022 CAMBIAMOS YA. Todos los derechos reservados.</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.model{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background-position: center center;
+    background-image: url(../imagens/city2.jpg);
+    z-index: -1;
+}
+.slider1{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background-position: center center;
+    background-image: url(../imagens/busi.jpg);
+    z-index: -1;
+}
+.slider1 li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+
+    animation: slider 40s linear infinite;
+    -moz-animation: slider 40s linear infinite;
+    -ms-zoom-animation: slider 40s linear infinite;
+    -o-animation: slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+
+}
+
+.slider li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+
+    animation: slider 40s linear infinite;
+    -moz-animation: slider 40s linear infinite;
+    -ms-zoom-animation: slider 40s linear infinite;
+    -o-animation: slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+
+}
+
+.slider .img1{
+    background-image: url(../imagens/olas.jpg);
+    animation-delay: 10s;
+}
+
+.slider .img2{
+    background-image: url(../imagens/city.jpg);
+    animation-delay: 20s;
+}
+
+.slider .img3{
+    background-image: url(../imagens/mar.jpg);
+    animation-delay: 30s;
+}
+
+.slider .img11{
+    background-image: url(../imagens/gota.jpg);
+    opacity: 0.85;
+    animation-delay: 10s;
+}
+
+.slider .img22{
+    background-image: url(../imagens/white.jpg);
+    opacity: 0.95;
+    animation-delay: 20s;
+}
+
+.slider .img33{
+    background-image: url(../imagens/);
+    animation-delay: 30s;
+}
+video{
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 110%;
+   object-fit: cover;
+   z-index:-1;
+}
+
+@keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}   
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: scale(2);}
+    100%{opacity: 0;}
+}
+

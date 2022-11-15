@@ -1,15 +1,20 @@
-1
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <link rel="stylesheet" href="style.css/flex.css">
+    <link rel="stylesheet" href="style.css/model.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28ca8ba07e.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
 </head>
-
 <body>
+    <div class="model">
+        <ul class="slider1">
+        </ul>
     <header class="titulares header">
         <img class="logo" src="imagens/LOGO.png">
         <button class="nav-toggle">
@@ -37,41 +42,53 @@
     </header>
     <main>
         <article class="hero-image">
-            <div>
-                <h1>BIENVENIDOS!</h1>
+            <div> 
+                <h1 data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">BIENVENIDOS!</h1>
             </div>
         </article>
         <section class="flex-container flex-row-reverse">
             <article class="flex-item">
-                <h2>Resolucion 061 del 03 de <br>Novienbre de 2017</h2>
+                <h2  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">Resolucion 061 del 03 de <br>Novienbre de 2017</h2>
                 <p>Normatividad vigente para hacer cambios en colombia</p>
                 <a href="imagens/Resolucion-00006.pdf" target="_blank"><input type="button" value="Leer mas..."></a>
             </article>
             <article class="flex-item">
-                <img src="imagens/divisas.jpg">
+                <img src="imagens/divisas.jpg" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
             </article>
         </section>
         <section class="flex-container">
             <article class="flex-item">
-                <h2>Resolucion 059 del 2013</h2>
+                <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">Resolucion 059 del 2013</h2>
                 <p>Normatividad vigente para hacer un cambio legal en colombia</p>
                 <a href="imagens/RESOLUCION-059.pdf" target="_blank"><input type="button" value="Leer mas..."></a>
             </article>
             <article class="flex-item">
-                <img src="imagens/derechos.jpg">
+                <img src="imagens/derechos.jpg" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
             </article>
         </section>
     </main>
     <footer class="titulares">
         <div>
-            <h1>Siguenos</h1>
+            <h3>Siguenos</h3>
         </div>
         <div class="redes-container">
             <div>
                 <img class=itm src="imagens/LOGO.png" alt="logo">
             </div>
             <div>
-                <ul>
+                <ul data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                     <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li><a href="https://instagram.com" target="_blank" class="instagram"><i
@@ -85,8 +102,11 @@
             </div>
         </div>
         <p>2022 CAMBIAMOS YA. Todos los derechos reservados.</p>
-    </footer>
-
+    </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
